@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}   
+
+
+body {
+    background: url(img/body2.png) no-repeat center center/cover;
+    
+    
+}
+
+:root {
+    --green-uno: #51A146;
+    --green-dos: #305324;
+    --red: #BE1522;
+    --red-orange: #E30613;
+    --font-300: 'Signika';
+    --font-500: 'Signika', sans-serif;
+}
+
+
+.container--general {
+    width: 85%;
+    margin: 1em auto;
+    font-family: var(--font-300);
+    
+}
+
+a {
+    color: var(--red);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    margin: auto;
+}
+
+.header .img--logo2 {
+    display: none;
+}
+
+/* BARRA DE NAVEGACION */
+.container--nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1.2em 0;
+}
+
+.container--nav .barra--navegacion {
+    text-align: center;
+    color: var(--red);
+}
+
+.nav--h1,
+.nav--promociones,
+.link-whatsapp {
+    padding: 3px;
+}
+
+.link-whatsapp {
+    color: var(--green-uno);
+    font-size: 1.2em;
+}
+
+.precio {
+    font-size: 2em;
+    color: var(--red);
+}
+/* PROMOCIONES */
+.container--promociones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5em;
+
+}
+
+.img--promociones {
+    max-width: 95%;
+}
+
+.container--promociones .section--one {
+    text-align: center;
+   
+}
+
+.container--promociones .section--one h2 {
+    padding: .6em;
+    color:var(--red);
+    
+}
+
+.container--promociones .section--one ul {
+    text-align: left;
+    padding-bottom: .8em;
+    color: var(--green-dos);
+}
+
+.container--promociones .section--one ul li {
+    letter-spacing: 1px;
+    margin: .5em;
+}
+
+.container--promociones .section--one .articule--one img {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    
+}
+
+
+
+.container--promociones .section--one .articule--two h2 {
+    padding-top: 2em;
+}
+
+.container--promociones .section--one .articule--two img {
+    margin-top: .8em;
+    
+    
+}
+
+
+
+
+.container--promociones .section--two {
+    text-align: center;
+    
+}
+
+
+
+.container--promociones .section--two .img-two {
+    margin-top: 4em;
+    
+}
+
+.container--promociones .section--two h3 {
+    color: var(--red);
+    padding: .6em;
+    font-size: 1.4em;
+}
+
+.container--promociones .section--two ul {
+    text-align: left;
+    padding-bottom: .8em;
+    color: var(--green-dos);
+}
+
+.container--promociones .section--two ul li {
+    letter-spacing: 1px;
+    margin: .5em;
+}
+
+.container--promociones .section--one b,
+.container--promociones .section--two b {
+    display: block;
+    border-bottom: 1px dashed rgba(190, 21, 34, .5);
+}
+
+.link--vermas {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.link--vermas a h3 {
+    color: var(--red);
+    border-bottom: 2px dotted var(--green-dos);
+}
+
+/* FOOTER */
+.container--footer {
+    background: var(--green-dos);
+    opacity: .9;
+    text-align: center;
+    padding: 1.2em .2em;
+    color: var(--red);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+
+.container--footer .footer a{
+    color: #fff;
+    
+    font-size: 1em;
+}
+
+.container--footer .footer .footer--redes-sociales .h3--siguenos {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.container--footer .footer a i {
+    font-size: 2em;
+    padding: .3em;
+}
+
+.container--footer .footer .footer--correo {
+    margin-top: 1em;
+    color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+    .header .img--logo {
+        display: none;
+        
+    }
+
+    .header .img--logo2 {
+        display: block;
+        width: 300px;
+        height: 250px;
+    }
+    
+    .container--nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .container--nav .barra--navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 3px 5px var(--red);
+        width: 100%;
+        height: 50px;
+        
+    }
+
+    .nav--h1,
+    .nav--promociones,
+    .link-whatsapp {
+        padding: 1em;
+    
+    }
+
+    .nav--h1 a:hover,
+    .nav--promociones a:hover ,
+    .link-whatsapp a:hover {
+        border-bottom: 3px solid var(--red);       
+        /* font-size: 1em; */
+        
+        transition: all 1s ease-in-out 1ms;
+        
+
+    }
+    
+    
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .container--promociones .section--one .articule--one .articule--one-ulimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container--promociones .section--one .articule--two .articule--two-ulimg {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: .9em;
+    }
+    
+    .container--promociones .section--two {
+        display: flex;
+        flex-flow: row nowrap;
+        /* flex: 1 1 auto; */
+        justify-content: start;
+        align-items: center;
+        text-align: left;
+        height: 700px;
+    }
+    
+    .container--promociones .section--two article {
+        
+        box-shadow: 0 0 5px var(--red);
+        margin: 0 .5em 0 .5em;
+        height: 600px;
+        padding: 0;
+        display: flex;
+        flex: 1 1 auto;
+        width: 33.33%;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+     
+    
+    .container--promociones .section--two b {
+        border: none;
+        align-self: center;
+        position: absolute;
+        bottom: 10px;
+        margin-top: .5em;
+    }
+
+    .nav--h1 a:hover,
+    .nav--promociones a:hover ,
+    .link-whatsapp a:hover {
+        border-bottom: 3px solid var(--red);       
+        font-size: 2em;
+        
+        transition: all 1s ease-in-out 1ms;
+        
+
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container--promociones .section--one ul,
+    .container--promociones .section--two ul {
+        font-size: 1.3em;
+    }
+
+    .container--promociones .section--one h2 {
+        font-size: 2em;
+        
+    }
+
+    .container--promociones .section--one b {
+        font-size: 2.5em;
+    }
+
+    .container--promociones .section--two {
+        margin-top: 5em;
+    }
+
+    .container--promociones .section--two article {
+        height: 700px;
+    }    
+
+    .link--vermas {
+        font-size: 1.8em;
+    }
+}
